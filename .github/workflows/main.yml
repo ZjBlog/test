@@ -16,7 +16,7 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     - name: send-message
-      uses: ZjBlog/message@v1.5
+      uses: ./test
       with:
         URL:  ${{secrets.URL}}
       env: 
