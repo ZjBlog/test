@@ -9,5 +9,5 @@ LABEL "repository"="https://github.com/ZjBlog/message.git"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Octocat <octocat@github.com>"
 RUN apk add --no-cache curl
-copy  ./entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+RUN ["/bin/bash", "-c", "echo hello"]
+CMD echo "Hello lienhua34"
