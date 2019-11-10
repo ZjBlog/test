@@ -9,4 +9,4 @@ LABEL "repository"="https://github.com/ZjBlog/message.git"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Octocat <octocat@github.com>"
 RUN apk add --no-cache curl
-ENTRYPOINT ["curl", "www.baidu.com"]
+ENTRYPOINT ["curl", "sc.ftqq.com"]
