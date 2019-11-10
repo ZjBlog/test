@@ -15,6 +15,8 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+    - name: send-message
+      uses: ZjBlog/message@v1.5
       env: 
         MESSAGE: "bgcz.github.io部署成功"
         URL: ${{ secrets.URL }}
