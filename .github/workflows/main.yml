@@ -15,6 +15,12 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+    - name: createIssueByLables
+      uses: ZjBlog/create-issue-by-lables@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with: 
+        filepath: issues.json
     - name: send-message
       uses: ZjBlog/message@v1.5
       env: 
