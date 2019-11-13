@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: send-message
-      uses: ./test2
+      uses: ./scp
       env: 
-        password: ${{ secrets.pw }}
+        DEPLOY_KEY: ${{ secrets.key }}
       
